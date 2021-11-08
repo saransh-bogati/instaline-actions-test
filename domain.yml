@@ -59,7 +59,7 @@ slots:
 responses:
   utter_greet:
     - text: Welcome! What can I get for you today?
-    - text: Hey There! What can I get for you today?
+    - text: Hey! What can I get for you today?
   utter_cheer_up:
     - text: 'Here is something to cheer you up:'
       image: https://i.imgur.com/nGF1K8f.jpg
