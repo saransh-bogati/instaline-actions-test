@@ -16,7 +16,7 @@ jobs:
         run: |
           pip install pipenv
           pipenv install --skip-lock
-#       - run: pipenv run rasa test nlu -f 3 --cross-validation 
+      - run: pipenv run rasa test nlu -f 3 --cross-validation 
       - run:  pipenv run rasa train --quiet
       - run: pipenv run rasa test core --fail-on-prediction-errors
            
