@@ -1,0 +1,6 @@
+version: "2.0"
+rules:
+- rule: Show menu anytime the user asks
+  steps:
+  - intent: query_menu
+  - action: utter_show_menu

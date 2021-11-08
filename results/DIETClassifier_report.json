@@ -1,0 +1,58 @@
+{
+  "food_units": {
+    "precision": 0.9846153846153847,
+    "recall": 1.0,
+    "f1-score": 0.9922480620155039,
+    "support": 64,
+    "confused_with": {}
+  },
+  "cart_action.remove": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 16,
+    "confused_with": {}
+  },
+  "food": {
+    "precision": 1.0,
+    "recall": 0.9791666666666666,
+    "f1-score": 0.9894736842105264,
+    "support": 192,
+    "confused_with": {
+      "number": 3,
+      "food_units": 1
+    }
+  },
+  "number": {
+    "precision": 0.963855421686747,
+    "recall": 1.0,
+    "f1-score": 0.9815950920245399,
+    "support": 80,
+    "confused_with": {}
+  },
+  "cart_action.add": {
+    "precision": 1.0,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.923076923076923,
+    "support": 112,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9910714285714286,
+    "recall": 0.9568965517241379,
+    "f1-score": 0.9736842105263158,
+    "support": 464
+  },
+  "macro avg": {
+    "precision": 0.9896941612604262,
+    "recall": 0.9672619047619048,
+    "f1-score": 0.9772787522654987,
+    "support": 464
+  },
+  "weighted avg": {
+    "precision": 0.9916461602377681,
+    "recall": 0.9568965517241379,
+    "f1-score": 0.9728341510430859,
+    "support": 464
+  }
+}

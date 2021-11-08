@@ -1,0 +1,4 @@
+nlu:
+- intent: request_order
+  examples: |
+    - I want to order [1](number) [plates](food_units) of [burger](food)

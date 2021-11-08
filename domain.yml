@@ -1,0 +1,164 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+  - query_location
+  - query_menu
+  - request_order
+  - provide_modifier
+  - query
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - business_hours
+  - items_modified
+  - notes
+entities:
+  - cart_action:
+    - groups:
+      - add
+      - remove
+  - food
+  - food_units
+  - modifier
+  - number
+slots:
+  cart_action:
+    type: text
+    initial_value: add
+    influence_conversation: true
+  cart_action_group:
+    type: text
+    initial_value: add
+    auto_fill: false
+    influence_conversation: false
+  # notes:
+  #   type: text
+  #   influence_conversation: true
+  item:
+    type: text
+    influence_conversation: false
+  quantity:
+    type: float
+    influence_conversation: false
+    max_value: 50.0
+    min_value: 1.0
+  units:
+    type: text
+    initial_value: plate
+    influence_conversation: false
+  has_modifiers:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+  modifiers:
+    type: text
+    influence_conversation: false
+responses:
+  utter_greet:
+    - text: Welcome! What can I get for you today?
+    - text: Hey There! What can I get for you today?
+  utter_cheer_up:
+    - text: 'Here is something to cheer you up:'
+      image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+    - text: Did that help you?
+  utter_happy:
+    - text: Great, carry on!
+  utter_goodbye:
+    - text: Bye
+  utter_iamabot:
+    - text: I am a bot, powered by Rasa.
+  utter_query_reply:
+    - text: Whatever you tell me.
+    - text: Everything... LOL
+  # utter_ask_item:
+  # - text: What would you like to order?
+  # - text: What can I get for you?
+  # - text: What do you feel like having today?
+  utter_ask_quantity:
+    - text: How much/many would you prefer to?
+  utter_ask_valid_quantity:
+    - text: Please type the correct quantity.
+  utter_ask_modifiers:
+    - text: What modifiers would you like?
+    - text: What modifiers will you choose?
+  # utter_ask_notes:
+  #   - text: Please leave a special note or continue adding new items
+  utter_submit:
+    - text: Would you like to add more items?
+    - text: Anything else?
+  utter_no:
+    - text: To checkout, please press Checkout at the bottom
+  utter_yes:
+    - text: What else would you like to add?
+    - text: OK. What would you like to add?
+  utter_ask:
+    - text: Would you like to order anything?
+  utter_show_menu:
+    - text: Please click Show Menu at the bottom
+  utter_category:
+    - text: "Which {category} would you prefer?"
+  utter_slots_values:
+    - text: "I am going to place an order for the following:
+       - item: {item}
+       - quantity: {quantity}"
+  utter_modifiers_here:
+    - text: 'Here are the modifiers:'
+    - text: 'There are the modifiers you can choose:'
+  utter_show_location:
+    - text: 'We are located at:'
+  utter_please_rephrase:
+    - text: I'm sorry, I didn't quite understand that. Could you ask another one?
+    - text: I'm sorry, I didn't quite understand that. Could you ask another one?
+  utter_order_add_confirmation:
+    - text: "{quantity} {res_item} added. You can continue adding or Checkout."
+    - text: "{quantity} {res_item} added. You can checkout or keep adding items to your list."
+    - text: "Added {quantity} {res_item}. Anything else?"
+  utter_order_remove_confirmation:
+    - text: "{quantity} {res_item} removed. You can continue adding or Checkout."
+    - text: "{quantity} {res_item} removed. You can checkout or keep updating your list."
+    - text: "Removed {quantity} {res_item}. Anything else?"
+  utter_order_empty:
+    - text: You don't have anything on your bag.
+    - text: You don't have anything on your list.
+    - text: Your bag is empty.
+  utter_item_not_understood:
+    - text: Couldn't understand the item specified. Try saying it again.
+    - text: Couldn't understand at the moment. Retry saying it.
+actions:
+  - action_ask_food_category
+  - action_business_hours
+  - action_check_modifiers
+  - action_greet
+  - action_place_order
+  - action_cancel_order
+  - action_search
+  - action_show_location
+  - action_show_menu
+  - action_show_modifiers
+  - action_utter_no
+  - action_validate_input
+  - utter_ask_quantity
+  - utter_submit
+  - validate_restaurant_form
+  - action_items_modified
+  # - action_add_notes
+forms:
+  restaurant_form:
+    required_slots:
+      item:
+        - type: from_entity
+          entity: food
+      quantity:
+        - type: from_entity
+          entity: number
+      units:
+        - type: from_entity
+          entity: food_units
+      cart_action:
+        - type: from_entity
+          entity: cart_action
+      

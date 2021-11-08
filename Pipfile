@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+rasa = "*"
+spacy = "*"
+en-core-web-trf = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.1.0/en_core_web_trf-3.1.0-py3-none-any.whl"}
+pydantic = "*"
+httpx = "*"
+black = "*"
+python-dotenv = "*"
+requests-mock = "*"
+pytest = "*"
+pytest-asyncio = "*"
+responses = "*"
+
+[dev-packages]
+autoflake = "*"
+autopep8 = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

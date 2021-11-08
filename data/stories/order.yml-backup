@@ -1,0 +1,112 @@
+version: "2.0"
+
+stories:
+# - story: Customer Populates cart without modifiers
+#   steps:
+#   - intent: request_order
+#   - action: restaurant_form # Activates restaurant form
+#   - active_loop: restaurant_form
+#   - active_loop: null
+#   - action: action_validate_input
+#   - action: action_place_order
+#   - action: utter_submit
+
+- story: Customer Populates cart without modifiers unhappy path
+  steps:
+  - intent: request_order
+  - action: restaurant_form # Activates restaurant form
+  - active_loop: restaurant_form
+  - active_loop: null
+  - action: action_validate_input
+  - action: action_place_order
+  - action: utter_submit
+  - action: action_restart
+  - intent: deny
+  - action: utter_no
+
+
+- story: Customer Populates cart without modifiers happy path
+  steps:
+  - intent: request_order
+  - action: restaurant_form # Activates restaurant form
+  - active_loop: restaurant_form
+  - active_loop: null
+  - action: action_validate_input
+  - action: action_place_order
+  - action: utter_submit
+  - action: action_restart
+  - intent: affirm
+  - action: utter_yes
+
+
+- story: Customer cancel items in cart without modifiers unhappy path
+  steps:
+  - intent: remove_order
+  - action: restaurant_form # Activates restaurant form
+  - active_loop: restaurant_form
+  - active_loop: null
+  - action: action_validate_input
+  - action: action_cancel_order
+  - action: utter_submit
+  - action: action_restart
+  - intent: deny
+  - action: utter_no
+
+
+- story: Customer cancel items in cart without modifiers happy path
+  steps:
+  - intent: remove_order
+  - action: restaurant_form # Activates restaurant form
+  - active_loop: restaurant_form
+  - active_loop: null
+  - action: action_validate_input
+  - action: action_cancel_order
+  - action: utter_submit
+  - action: action_restart
+  - intent: affirm
+  - action: utter_yes
+
+
+#- story: Customer add food category happy path
+# steps:
+# - intent: add_food_category
+# - action: restaurant_form # Activates restaurant form
+# - active_loop: restaurant_form
+# - action: action_ask_food_category
+# - intent: foods
+# - action: utter_ask_quantity
+# - intent: numbers
+# - active_loop: null
+# - action: utter_submit
+# - intent: affirm
+# - action: utter_yes
+
+#- story: Customer add food category uhappy path
+#  steps:
+#  - intent: add_food_category
+#  - action: action_ask_food_category
+#  - intent: foods
+#  - action: action_ask_quantity
+#  - intent: numbers
+#  - action: utter_submit
+#  - intent: deny
+#  - action: utter_no
+
+
+# - story: Customer Populates cart with modifiers
+#   steps:
+#   - intent: request_order
+#   - action: action_check_modifiers
+#   - action: restaurant_form
+#   - active_loop: restaurant_form
+#   - active_loop: null
+#   - action: action_check_modifiers
+#   - slot_was_set:
+#     - has_modifiers: true
+#   - action: utter_modifiers_here
+#   - intent: provide_modifier
+#   - action: action_validate_input
+#   - action: action_search
+  # - action: utter_submit
+  # - action: utter_slots_values
+  

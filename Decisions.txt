@@ -1,0 +1,102 @@
+BASIC
+============
+
+Greeting (rule) done
+    -> hi
+    <- Welcome! What can I get for you today?
+
+Leave (rule) done
+    -> bye
+    <- Bye
+
+Check Vendor location (rule) TODO
+    -> Where are you based?
+    <- [Here]
+
+# Check Order history (rule) TODO
+#    -> Show my order history
+#    <- ...
+
+Customer asks for menu (rule) done
+    -> show menu
+    <- Here is the menu:
+    <- [Cart view]
+
+Customer populates cart directly (story) done
+    -> I want to order 5 plates of buff momo.
+    <- [Ask to choose modifier with options shown]
+    -> [modifier]
+    <- Do you want to checkout?
+    # Splitters (Checkout)
+    = Do Checkout
+        <- 
+    = Add more items
+        -> 
+
+
+Customer populates cart incompletely (Story / rule) add more to it.
+    -> I want to order buff momo.
+    <- How much/many do you want?
+    -> 4
+    <- [Ask to choose modifier with options shown]
+    -> [modifier]
+    <- Do you want to checkout?
+    # Splitters (Checkout)
+    = Do Checkout
+        <- 
+    = Add more items
+        -> 
+
+
+INTERMEDIATE
+============
+
+Check Opening / Closing hours (rule) TODO
+    -> What time do you work?
+    <- ...
+
+Check Availability - Unavailable (Story)    TODO
+    -> Do you have Khuwa momo?
+    <- No. But we do have these momo: [...]
+
+Check Availability - Available  (Story) TODO
+    -> Do you have Khuwa momo?
+    <- Yes. Want me to order for you?
+    -> Yes.
+    <- How much/many do you want?
+    -> 4
+    <- [Ask to choose modifier with options shown]
+    -> [modifier]
+    <- Do you want to checkout?
+    # Splitters (Checkout)
+    = Do Checkout
+        <- 
+    = Add more items
+        -> 
+
+
+COMPLEX
+============
+
+
+Customer asks for Nutrient (rule/Story) TODO
+    ...
+
+Customer asks for Ingredient (rule/Story)   TODO
+    ...
+
+Customer asks for Allergant (rule/Story)    TODO
+    ...
+
+Customer asks for modifiers/variants (rule/story)   TODO
+    ...
+
+Remove/Updates the item cart (story)    TODO
+    ...
+
+
+
+FAQ
+=========
+
+...

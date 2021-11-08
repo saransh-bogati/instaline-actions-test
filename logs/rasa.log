@@ -1,0 +1,9 @@
+2021-10-26 13:49:41 INFO     root  - Starting Rasa server on http://localhost:5005
+2021-10-26 13:49:41 INFO     rasa.model  - Loading model models/20211026-114733.tar.gz...
+2021-10-26 13:49:48 INFO     rasa.nlu.components  - Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_trf'.
+2021-10-26 13:49:48.454498: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+[93m/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/utils/train_utils.py:641: UserWarning: constrain_similarities is set to `False`. It is recommended to set it to `True` when using cross-entropy loss. It will be set to `True` by default, Rasa Open Source 3.0.0 onwards.
+  rasa.shared.utils.io.raise_warning(
+[0m2021-10-26 13:50:09 INFO     botocore.credentials  - Found credentials in shared credentials file: ~/.aws/credentials
+2021-10-26 13:50:24 WARNING  rasa.shared.utils.common  - The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-10-26 13:50:34 INFO     root  - Rasa server is up and running.

@@ -1,0 +1,7 @@
+version: "2.0"
+rules:
+- rule: Show business hours anytime the user asks
+  steps:
+  - intent: business_hours
+  - action: action_business_hours
+  - action: utter_ask

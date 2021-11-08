@@ -1,0 +1,6 @@
+version: "2.0"
+rules:
+- rule: send message when item is modified from UI
+  steps:
+  - intent: items_modified
+  - action: action_items_modified

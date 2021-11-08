@@ -1,0 +1,15 @@
+version: "2.0"
+nlu:
+- intent: business_hours
+  examples: |
+    - opening time?
+    - opening hours
+    - open hours?
+    - open time?
+    - office hours
+    - office time
+    - business hours
+    - business time
+    - When do you open?
+    - At what time do you open?
+    - what  time do you open

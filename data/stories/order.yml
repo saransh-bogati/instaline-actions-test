@@ -1,0 +1,35 @@
+version: "2.0"
+
+stories:
+- story: Request Order
+  steps:
+  - intent: request_order
+    # entities:
+    #   - cart_action: add
+    #     group: add
+  - action: restaurant_form # Activates restaurant form
+  - slot_was_set:
+      - cart_action: add
+  - active_loop: restaurant_form
+  - active_loop: null
+  - action: action_place_order
+  # - action: utter_ask_notes
+  - action: utter_submit
+
+# - story: add notes
+#   steps:
+#   - intent: notes
+#   - action: action_add_notes
+
+# - story: Remove Order
+#   steps:
+#   - intent: request_order
+#     entities:
+#       - cart_action: remove
+#         group: remove
+#   - action: restaurant_form # Activates restaurant form
+#   - active_loop: restaurant_form
+#   - active_loop: null
+#   - action: action_cancel_order
+#   - action: utter_submit
+

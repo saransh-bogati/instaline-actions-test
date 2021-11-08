@@ -1,0 +1,84 @@
+version: "2.0"
+nlu:
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+#- intent: add_food_category
+#  examples: |
+#    - order [CHOILA](food_category_name)
+#    - order [choila](food_category_name)
+#    - add [choila](food_category_name)
+#    - add [KEEMA](food_category_name)
+#    - order [KEEMA](food_category_name)
+#    - order [KEEMA ANDA](food_category_name)
+#    - add [KEEMA ANDA](food_category_name)
+#    - add [MOMO](food_category_name)
+#    - add [momo](food_category_name)
+#    - add [mo mo](food_category_name)
+#    - order [momo](food_category_name)
+#- intent: cancel_food_category
+#  examples: |
+#    - cancel [CHOILA](food_category_name)
+#    - remove [KEEMA](food_category_name)
+#    - cancel [KEEMA ANDA](food_category_name)
+#    - remove [MOMO](food_category_name)
+#- intent: add_food
+#  examples: |
+#    - order [BUFF CHOILA](food)
+#    - order [CHICKEN CHOILA](food)
+#    - I want to order [CHICKEN KEEMA](food)
+#    - add order [BUFF KEEMA](food)
+#    - order [CHICKEN KEEMA ANDA](food)
+#    - add [VEG KEEMA ANDA](food)
+#    - order [CHICKEN MOMO](food)
+#    - order [VEG MOMO](food)
+#- intent: cancel_food
+#  examples: |
+#    - cancel [BUFF CHOILA](food)
+#    - remove [CHICKEN CHOILA](food)
+#    - I don't want to order [CHICKEN KEEMA](food)
+#    - I don't want to order [BUFF KEEMA](food)
+#    - remove [CHICKEN KEEMA ANDA](food)
+#    - cancel order [VEG KEEMA ANDA](food)
+#    - remove order [CHICKEN MOMO](food)
+#    - remove [VEG MOMO](food)
+
+#- intent: numbers
+#  examples: |
+#    - [one](number) plate
+#    - [two](number) plates
+#    - [three](number) kg
+#    - [four](number) kg
+#    - [five](number) plates
+#    - [1](number) plate
+#    - [2](number) plates
+#    - [3](number) plates
+#    - [4](number) kg
+#    - [5](number) kg
+#    - [10](number) kg
+#- intent: foods
+#  examples: |
+#    - [BUFF CHOILA](food)
+#    - [CHICKEN CHOILA](food)
+#    - [CHICKEN KEEMA](food)
+#    - [BUFF KEEMA](food)
+#    - [CHICKEN KEEMA ANDA](food)
+#    - [VEG KEEMA ANDA](food)
+#    - [CHICKEN MOMO](food)
+#    - [chicken](food)
+#    - [chicken momo](food)
+#    - [VEG MOMO](food)

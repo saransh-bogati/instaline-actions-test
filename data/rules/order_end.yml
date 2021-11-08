@@ -1,0 +1,14 @@
+version: "2.0"
+rules:
+
+- rule: Finish up ordering
+  steps:
+  - action: utter_submit
+  - intent: deny
+  - action: utter_no
+
+- rule: More Order Affirmation
+  steps:
+  - action: utter_submit
+  - intent: affirm
+  - action: utter_yes

@@ -1,0 +1,1153 @@
+[
+  {
+    "text": "please add one plate CHOILA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 27,
+        "value": "CHOILA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.92222660779953,
+        "group": "add",
+        "confidence_group": 0.9189227819442749,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998219609260559,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998682737350464,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9987199306488037,
+        "value": "CHOILA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "four plates KEEMA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "four",
+        "entity": "number"
+      },
+      {
+        "start": 5,
+        "end": 11,
+        "value": "plates",
+        "entity": "food_units"
+      },
+      {
+        "start": 12,
+        "end": 17,
+        "value": "KEEMA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9996256828308105,
+        "value": "four",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 5,
+        "end": 17,
+        "confidence_entity": 0.8421897292137146,
+        "value": "plates KEEMA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate KEEMA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "value": "KEEMA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9241119623184204,
+        "group": "add",
+        "confidence_group": 0.9223409295082092,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998292922973633,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998657703399658,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.8892197012901306,
+        "value": "KEEMA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "three KEEMA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "three",
+        "entity": "number"
+      },
+      {
+        "start": 6,
+        "end": 11,
+        "value": "KEEMA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.5770537853240967,
+        "value": "three KEEMA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate KEEMA ANDA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 31,
+        "value": "KEEMA ANDA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9140358567237854,
+        "group": "add",
+        "confidence_group": 0.9115080833435059,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998249411582947,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998106360435486,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 31,
+        "confidence_entity": 0.8526227474212646,
+        "value": "KEEMA ANDA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "three KEEMA ANDA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "three",
+        "entity": "number"
+      },
+      {
+        "start": 6,
+        "end": 16,
+        "value": "KEEMA ANDA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.5654070377349854,
+        "value": "three KEEMA ANDA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate MOMO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 25,
+        "value": "MOMO",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9217742085456848,
+        "group": "add",
+        "confidence_group": 0.9169884920120239,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998278617858887,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998646974563599,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.9858411550521851,
+        "value": "MOMO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate BUFF CHOILA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 32,
+        "value": "BUFF CHOILA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9176138043403625,
+        "group": "add",
+        "confidence_group": 0.9160557389259338,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.999798595905304,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998223185539246,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.9992231130599976,
+        "value": "BUFF CHOILA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate BUFF KEEMA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 31,
+        "value": "BUFF KEEMA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9192781448364258,
+        "group": "add",
+        "confidence_group": 0.9188429713249207,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9997891783714294,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998167157173157,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 31,
+        "confidence_entity": 0.9966061115264893,
+        "value": "BUFF KEEMA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate BUFF KEEMA ANDA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 36,
+        "value": "BUFF KEEMA ANDA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9105315804481506,
+        "group": "add",
+        "confidence_group": 0.9096555709838867,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9997685551643372,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998053908348083,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 36,
+        "confidence_entity": 0.6541745662689209,
+        "value": "BUFF KEEMA ANDA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate BUFF MOMO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 30,
+        "value": "BUFF MOMO",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9169155359268188,
+        "group": "add",
+        "confidence_group": 0.9141623377799988,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998168349266052,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998199343681335,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.9995576739311218,
+        "value": "BUFF MOMO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate CHICKEN CHOILA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 35,
+        "value": "CHICKEN CHOILA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9132248759269714,
+        "group": "add",
+        "confidence_group": 0.9067800045013428,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998389482498169,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998170733451843,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 35,
+        "confidence_entity": 0.9973461627960205,
+        "value": "CHICKEN CHOILA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate CHICKEN KEEMA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 34,
+        "value": "CHICKEN KEEMA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9143868684768677,
+        "group": "add",
+        "confidence_group": 0.9095248579978943,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998303651809692,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998113512992859,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 34,
+        "confidence_entity": 0.9921890497207642,
+        "value": "CHICKEN KEEMA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate CHICKEN KEEMA ANDA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 39,
+        "value": "CHICKEN KEEMA ANDA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9045422077178955,
+        "group": "add",
+        "confidence_group": 0.8995519280433655,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998086094856262,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9997993111610413,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 39,
+        "confidence_entity": 0.8213820457458496,
+        "value": "CHICKEN KEEMA ANDA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate CHICKEN MOMO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 33,
+        "value": "CHICKEN MOMO",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9090037941932678,
+        "group": "add",
+        "confidence_group": 0.9015322327613831,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.999822199344635,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998031258583069,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 33,
+        "confidence_entity": 0.9978637099266052,
+        "value": "CHICKEN MOMO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate VEG KEEMA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 30,
+        "value": "VEG KEEMA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.917633056640625,
+        "group": "add",
+        "confidence_group": 0.9164828658103943,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998225569725037,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998112320899963,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.9091721773147583,
+        "value": "VEG KEEMA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate VEG KEEMA ANDA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 35,
+        "value": "VEG KEEMA ANDA",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9087046384811401,
+        "group": "add",
+        "confidence_group": 0.9069988131523132,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998018145561218,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9997997879981995,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 35,
+        "confidence_entity": 0.7621262073516846,
+        "value": "VEG KEEMA ANDA",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate VEG MOMO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 29,
+        "value": "VEG MOMO",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.915247917175293,
+        "group": "add",
+        "confidence_group": 0.9115278720855713,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.999839186668396,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9998134970664978,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 29,
+        "confidence_entity": 0.9134724736213684,
+        "value": "VEG MOMO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please add one plate VEGAN MOMO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "please add",
+        "entity": "cart_action",
+        "group": "add"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "one",
+        "entity": "number"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "plate",
+        "entity": "food_units"
+      },
+      {
+        "start": 21,
+        "end": 31,
+        "value": "VEGAN MOMO",
+        "entity": "food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cart_action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9097968339920044,
+        "group": "add",
+        "confidence_group": 0.9076111912727356,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "number",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9998458623886108,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_units",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.999811589717865,
+        "value": "plate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food",
+        "start": 21,
+        "end": 31,
+        "confidence_entity": 0.9633973240852356,
+        "value": "VEGAN MOMO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

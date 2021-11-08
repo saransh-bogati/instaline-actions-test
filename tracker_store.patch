@@ -1,0 +1,14 @@
+diff --git a/endpoints.yml b/endpoints.yml
+index d973280..156baf9 100644
+--- a/endpoints.yml
++++ b/endpoints.yml
+@@ -17,6 +17,9 @@ action_endpoint:
+ # By default the conversations are stored in memory.
+ # https://rasa.com/docs/rasa/tracker-stores
+ 
++tracker_store:
++   type: tracker_store.cloudwatch.CloudwatchTrackerStore
++
+ #tracker_store:
+ #    type: redis
+ #    url: <host of the redis instance, e.g. localhost>

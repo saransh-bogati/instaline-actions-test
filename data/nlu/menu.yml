@@ -1,0 +1,16 @@
+version: "2.0"
+nlu:
+- intent: query_menu
+  examples: |
+    - What do you serve?
+    - show menu
+    - show me the menu
+    - menu
+    - i want to see the menu
+    - can i see the menu
+    - do you have a menu?
+    - where is the menu?
+    - whats special
+    - what you have
+    - i cant see menu
+    - whats special for today

@@ -1,0 +1,132 @@
+Traceback (most recent call last):
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/bin/rasa", line 8, in <module>
+    sys.exit(main())
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/__main__.py", line 117, in main
+    cmdline_arguments.func(cmdline_arguments)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/cli/run.py", line 95, in run
+    rasa.run(**vars(args))
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/api.py", line 37, in run
+    import rasa.core.run
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/run.py", line 15, in <module>
+    from rasa import model, server, telemetry
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/server.py", line 58, in <module>
+    from rasa.core.agent import Agent
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/agent.py", line 16, in <module>
+    from rasa.core.channels.channel import OutputChannel, UserMessage
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/channels/__init__.py", line 23, in <module>
+    from rasa.core.channels.twilio import TwilioInput  # noqa: F401
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/channels/twilio.py", line 5, in <module>
+    from twilio.base.exceptions import TwilioRestException
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 939, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1037, in get_data
+KeyboardInterrupt
+2021-10-27 09:20:50 INFO     root  - Starting Rasa server on http://localhost:5005
+2021-10-27 09:20:50 INFO     rasa.model  - Loading model models/20211026-114733.tar.gz...
+2021-10-27 09:21:33 INFO     rasa.nlu.components  - Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_trf'.
+2021-10-27 09:21:33.386520: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+[93m/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/utils/train_utils.py:641: UserWarning: constrain_similarities is set to `False`. It is recommended to set it to `True` when using cross-entropy loss. It will be set to `True` by default, Rasa Open Source 3.0.0 onwards.
+  rasa.shared.utils.io.raise_warning(
+[0m2021-10-27 09:21:58 INFO     botocore.credentials  - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-10-27 09:24:14 +0545] [3942] [ERROR] Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/httpsession.py", line 344, in send
+    urllib_response = conn.urlopen(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/util/retry.py", line 376, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPSConnection object at 0x7f815a6222b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/tracker_store.py", line 124, in create
+    return _create_from_endpoint_config(obj, domain, event_broker)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/tracker_store.py", line 1272, in _create_from_endpoint_config
+    tracker_store = DynamoTrackerStore(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/tracker_store.py", line 437, in __init__
+    self.db = self.get_or_create_table(table_name)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/tracker_store.py", line 448, in get_or_create_table
+    self.client.describe_table(TableName=table_name)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/client.py", line 386, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/client.py", line 691, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/client.py", line 711, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/endpoint.py", line 102, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/endpoint.py", line 136, in _send_request
+    while self._needs_retry(attempts, operation_model, request_dict,
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/endpoint.py", line 253, in _needs_retry
+    responses = self._event_emitter.emit(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/hooks.py", line 357, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/hooks.py", line 228, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/hooks.py", line 211, in _emit
+    response = handler(**kwargs)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/retryhandler.py", line 183, in __call__
+    if self._checker(attempts, response, caught_exception):
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/retryhandler.py", line 250, in __call__
+    should_retry = self._should_retry(attempt_number, response,
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/retryhandler.py", line 277, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/retryhandler.py", line 316, in __call__
+    checker_response = checker(attempt_number, response,
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/retryhandler.py", line 222, in __call__
+    return self._check_caught_exception(
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/retryhandler.py", line 359, in _check_caught_exception
+    raise caught_exception
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/endpoint.py", line 200, in _do_get_response
+    http_response = self._send(request)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/endpoint.py", line 269, in _send
+    return self.http_session.send(request)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/botocore/httpsession.py", line 373, in send
+    raise EndpointConnectionError(endpoint_url=request.url, error=e)
+botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "https://dynamodb.us-east-1.amazonaws.com/"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/sanic/app.py", line 1130, in run
+    serve(**server_settings)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/sanic/server.py", line 888, in serve
+    trigger_events(before_start, loop)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/sanic/server.py", line 696, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/run.py", line 255, in load_agent_on_start
+    _tracker_store = TrackerStore.create(endpoints.tracker_store, event_broker=_broker)
+  File "/home/saransh/.local/share/virtualenvs/rasa-research-BDNtsgSO/lib/python3.8/site-packages/rasa/core/tracker_store.py", line 132, in create
+    raise ConnectionException(
+rasa.shared.exceptions.ConnectionException: Cannot connect to tracker store.Could not connect to the endpoint URL: "https://dynamodb.us-east-1.amazonaws.com/"
+[91mConnectionException: Cannot connect to tracker store.Could not connect to the endpoint URL: "https://dynamodb.us-east-1.amazonaws.com/"[0m
+sys:1: RuntimeWarning: coroutine 'Loop.create_server' was never awaited

@@ -1,0 +1,14 @@
+version: "2.0"
+nlu:
+- intent: query_location
+  examples: |
+    - where are you?
+    - where are you based?
+    - show me your location.
+    - where can I find you?
+    - what places do you serve?
+    - your address
+    - show address
+    - address
+    - location
+    - locations

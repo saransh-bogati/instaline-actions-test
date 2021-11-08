@@ -1,0 +1,172 @@
+version: "2.0"
+nlu:
+  - lookup: add
+    examples: |
+      - place
+      - more
+  - lookup: food_units
+    examples: |
+      - plates
+      - plate
+      - plt
+      - pl
+      - palte
+      - plte
+      - palat
+      - palet
+      - palt
+      - plat
+      - pla
+      - plae
+      - bottle
+      - botle
+      - bottl
+      - bottel
+      - btl
+      - botl
+      - botte
+      - bucket
+      - buckt
+      - bkt
+      - buckets
+      - bckts
+      - buket
+      - bckt
+      - cup
+      - cp
+      - cap
+      - cupe
+      - cups
+  - lookup: food
+    examples: |
+      - COKE
+      - cock
+      - cok
+      - cocke
+      - cokes
+      - FANTA
+      - fant
+      - fatna
+      - fantas 
+      - SPRITE
+      - sprit
+      - spirte
+      - sprites
+      - BHARWAN MUSHROOM
+      - barwan mushroom
+      - bhrawan mushroom
+      - varwan mushroom
+      - BLACK COFFEE
+      - blk coffee
+      - black cofee
+      - black coffe
+      - BLACK TEA
+      - CHICKEN GALOUTI KABAB
+      - chicken galuti kabab
+      - CHICKEN KEEMA WITH PAO
+      - chicken kima with pao
+      - chicken kima pao
+      - chicken keema pao
+      - chicken pao keema 
+      - chicken pao kima 
+      - chicken pao and keema 
+      - chicken keema and pao
+      - CHICKEN MOMO
+      - CHICKEN RESHMI KABAB
+      - CHICKEN reshami KABAB
+      - CHICKEN SEKUWA
+      - CHICKEN sekwa
+      - CHICKEN SHEEK BIRYANI
+      - CHICKEN SEEK briyani
+      - CHICKEN SHEK biryani
+      - CHICKEN sik biryani
+      - CHICKEN siik biryani
+      - CHICKEN shik biryani
+      - CHICKEN SHEEK KABAB
+      - CHICKEN TIKKA
+      - CHICKEN TIKA
+      - CHICKEN TIKKA BIRYANI
+      - CHICKEN TIKKA PIZZA
+      - CHICKEN TIKKA PIZA
+      - COLD COFFEE WITH ICE CREAM
+      - FISH AMRITSARI
+      - FISH AMRITSAR
+      - FISH BIRYANI
+      - FISH BRIYANI
+      - FISH BIRYAN
+      - FISH NUGGET
+      - FISH NUGET
+      - FISH TIKKA
+      - FISH TIKA
+      - FRESH LIME SODA
+      - LIME SODA
+      - SODA
+      - GAJAR HALWA
+      - GAJAR HALUWA
+      - GAZAR HALWA
+      - GREEN TEA
+      - HARIYALI KABAB
+      - HARYALI KABAB
+      - HOT LEMON WITH HONEY
+      - HOT LEMON AND HONEY
+      - HOT LEMON HONEY
+      - HOT HONEY LEMON 
+      - HYDERABADI GOSHT BIRYANI
+      - HYDERABAD GOST BIRYANI
+      - HYDERABADI GHOS BIRYANI
+      - HYDRABADI GHOS BIRYANI
+      - LASOONI JHINGA
+      - LASOON JHINGA
+      - MEAT LOVER'S PIZZA
+      - MEAT LOVERS PIZZA
+      - MEAT LOVER PIZZA
+      - MILK COFFEE
+      - MINERAL WATER
+      - WATER
+      - MORINGA TEA
+      - MURGH DUM BIRYANI
+      - MURGHI DUM BIRYANI
+      - MUSHROOM GALAUTI
+      - MUSHROOM GALUTI
+      - MUSHROOM PIZZA
+      - MUTTON GALOUTI KABAB
+      - MUTTON SEKUWA
+      - MUTTON SEKWA
+      - MUTTON SHAMI KABAB
+      - MUTTON SAMI KABAB
+      - MUTTON SHEEK KABAB
+      - MUTTON SEEK KABAB
+      - NON VEG PLATTER
+      - NON VEG PLATTER (WITH PRAWN)
+      - NON VEG PLATTER WITH PRAWN
+      - PAKKE GOSHT
+      - PAKE GOSHT
+      - PANEER TIKKA
+      - PIZZA MARGHERITA
+      - PIZZA MARGHRITA
+      - PIZZA MARGERITA
+      - PORK SEKUWA
+      - SARSON MAHI
+      - TANDOORI ALOO
+      - TANDOORI ALU
+      - TANDORI ALU
+      - TANDURI ALOO
+      - Full TANDOORI CHICKEN 
+      - Half TANDOORI CHICKEN 
+      - TANDOORI PRAWN
+      - TANGRI KABAB
+      - TAWA CHICKEN
+      - TAWA FISH
+      - TAVA FISH
+      - TEA WITH MILK
+      - MILK TEA
+      - TURKISH ADANA KABAB
+      - VADA PAO  
+      - BADA PAO
+      - VEGETABLE BIRYANI
+      - VEG BIRYANI
+      - VEGETABLE MOMO
+      - VEGETARIAN PLATTER
+      - VEG PLATTER
+      - ZAFFRANI CHICKEN
+      - ZAFRANI CHICKEN 

@@ -1,0 +1,37 @@
+# version: "2.0"
+# nlu:
+# - intent: notes
+#   examples: |
+#     - spicy
+#     - extra spicy
+#     - less spicy
+#     - little spicy
+#     - more spicy
+#     - more hot
+#     - not hot
+#     - not spicy
+#     - hot
+#     - oily 
+#     - less oily
+#     - more oily
+#     - more onion
+#     - extra onion
+#     - more cheese
+#     - extra cheese
+#     - no cheese
+#     - little cheese
+#     - with ketchup
+#     - with no ketchup
+#     - no ketchup
+#     - extra ketchup
+#     - extra sauce
+#     - no sauce
+#     - very little sauce
+#     - extra spicy on one 
+#     - extra large 
+#     - medium
+#     - small 
+#     - large 
+#     - extra small
+#     - half
+#     - full

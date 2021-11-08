@@ -1,0 +1,7 @@
+version: "2.0"
+rules:
+- rule: Show location anytime the user asks
+  steps:
+  - intent: query_location
+  - action: action_show_location
+  - action: utter_ask

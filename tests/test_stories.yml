@@ -1,0 +1,287 @@
+stories:
+- story: Simple add item to cart
+  steps:
+  - intent: request_order
+    user: |-
+      [add]{"entity": "cart_action", "group": "add"} [2](number) [plates](food_units) [buff momo](food)
+  - slot_was_set:
+    - cart_action: add
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: add
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: buff momo
+  - slot_was_set:
+    - quantity: 2
+  - slot_was_set:
+    - units: plates
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+
+- story: Simple add item to cart and affirm on add more 
+  steps:
+  - intent: request_order
+    user: |-
+      [add]{"entity": "cart_action", "group": "add"} [2](number) [plates](food_units) [buff momo](food)
+  - slot_was_set:
+    - cart_action: add
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: add
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: buff momo
+  - slot_was_set:
+    - quantity: 2
+  - slot_was_set:
+    - units: plates
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+  - intent: affirm
+    user: |-
+      yes
+  - action: utter_yes
+  - intent: request_order
+    user: |-
+      [1](number) [plate](food_units) [chicken momo](food)
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: add
+  - slot_was_set:
+    - item: buff momo
+  - slot_was_set:
+    - quantity: 2
+  - slot_was_set:
+    - units: plates
+  - slot_was_set:
+    - item: chicken momo
+  - slot_was_set:
+    - quantity: 1
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+
+- story: Simple add item to cart and deny on add more 
+  steps:
+  - intent: request_order
+    user: |-
+      [add]{"entity": "cart_action", "group": "add"} [2](number) [plates](food_units) [chicken momo](food)
+  - slot_was_set:
+    - cart_action: add
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: add
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: chicken momo
+  - slot_was_set:
+    - quantity: 2
+  - slot_was_set:
+    - units: plates
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+  - intent: deny
+    user: |-
+      no
+  - action: utter_no
+
+- story: add item category
+  steps:
+  - intent: request_order
+    user: |-
+      [add]{"entity": "cart_action", "group": "add"} [7](number) [plates](food_units) [momo](food)
+  - slot_was_set:
+    - cart_action: add
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: add
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - quantity: 7
+  - slot_was_set:
+    - units: plates
+  - slot_was_set:
+    - requested_slot: item
+  - intent: request_order
+    user: |-
+      [buff momo](food)
+  - action: restaurant_form
+  - slot_was_set:
+    - item: buff momo
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+
+- story: add item with no quantity and food unit
+  steps:
+  - intent: request_order
+    user: |-
+      [order]{"entity": "cart_action", "group": "add"} [buff choila](food)
+  - slot_was_set:
+    - cart_action: order
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: order
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: buff choila
+  - slot_was_set:
+    - requested_slot: quantity
+  - intent: request_order
+    user: |-
+      [5](number) [plates](food_units)
+  - action: restaurant_form
+  - slot_was_set:
+    - units: plates
+  - slot_was_set:
+    - quantity: 5
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+
+- story: add item and remove item
+
+  steps:
+  - intent: request_order
+    user: |-
+      [order]{"entity": "cart_action", "group": "add"} [buff momo](food)
+  - slot_was_set:
+    - cart_action: order
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: order
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: buff momo
+  - slot_was_set:
+    - requested_slot: quantity
+  - intent: request_order
+    user: |-
+      [6](number)
+  - action: restaurant_form
+  - slot_was_set:
+    - quantity: 6
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+  - intent: request_order
+    user: |-
+      [remove]{"entity": "cart_action", "group": "remove"} [3](number) [buff choila](food)
+  - slot_was_set:
+    - cart_action: remove
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: remove
+  - slot_was_set:
+    - item: buff momo
+  - slot_was_set:
+    - quantity: 6
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: buff choila
+  - slot_was_set:
+    - quantity: 3
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+
+- story: category add with no quantity
+  steps:
+  - intent: request_order
+    user: |-
+      [add]{"entity": "cart_action", "group": "add"} [momo](food)
+  - slot_was_set:
+    - cart_action: add
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - cart_action: add
+  - slot_was_set:
+    - units: plate
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - requested_slot: item
+  - intent: request_order
+    user: |-
+      [vegan momo](food)
+  - action: restaurant_form
+  - slot_was_set:
+    - item: vegan momo
+  - slot_was_set:
+    - requested_slot: quantity
+  - intent: request_order
+    user: |-
+      [5](number)
+  - action: restaurant_form
+  - slot_was_set:
+    - quantity: 5
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_place_order
+  - action: utter_submit
+
+- story: FAQ location
+  steps:
+  - intent: query_location
+    user: |-
+      what is your location
+  - action: action_show_location
+  - action: utter_ask
+
+- story: FAQ business hours
+  steps:
+  - intent: business_hours
+    user: |-
+      what time do you open
+  - action: action_business_hours
+  - action: utter_ask
+  
+- story: FAQ query menu
+  steps:
+  - intent: query_menu
+    user: |-
+      please show menu
+  - action: utter_show_menu
+
+
