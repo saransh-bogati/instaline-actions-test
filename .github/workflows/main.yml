@@ -18,7 +18,7 @@ jobs:
           pipenv install --skip-lock
       
       - name: Cross validation
-      - id: cvnlu
+        id: cvnlu
         run: |
           pipenv run rasa test nlu -f 3 --cross-validation 
       
