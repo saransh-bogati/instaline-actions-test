@@ -16,13 +16,19 @@ jobs:
         run: |
           pip install pipenv
           pipenv install --skip-lock
-      - run: pipenv run rasa test nlu -f 3 --cross-validation 
-      - run:  pipenv run rasa train --quiet
-      - run: pipenv run rasa test core --fail-on-prediction-errors
-           
-      - name: Format validation result
+      
+      - name: Cross validation
+      - id: cvnlu
         run: |
-          python .github/worklows/format_results.py
+          pipenv run rasa test nlu -f 3 --cross-validation 
+      
+      - name: Train rasa model
+        run: |
+          pipenv run rasa train --quiet
+      
+      - name: Test Stories
+        run: |
+          pipenv run rasa test core --fail-on-prediction-errors
       
       - name: post cross-val results to PR
         if: steps.cvnlu.outcome == 'success'
