@@ -1,0 +1,36 @@
+name: Continuous Integration for Rasa
+on: [pull_request]
+jobs: 
+  training-testing:
+    name: Training and Testing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: set up python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+          
+      - name: Install pipenv
+        run: |
+          pip install pipenv
+          pipenv install --skip-lock
+      - run: pipenv run rasa test nlu -f 3 --cross-validation 
+      - run:  pipenv run rasa train --quiet
+      - run: pipenv run rasa test core --fail-on-prediction-errors
+           
+      - name: Format validation result
+        run: |
+          command:- python .github/worklows/format_results.py
+#         run: |
+#           pipenv run rasa --version
+#           pipenv run rasa test nlu -f 3 --croess-validation 
+#           python .github/worklows/format_results.py
+      
+      - name: post cross-val results to PR
+        if: steps.cvnlu.outcome == 'success'
+        uses: amn41/comment-on-pr@comment-file-contents
+        continue-on-error: true
+        with:
+          msg: results.md
