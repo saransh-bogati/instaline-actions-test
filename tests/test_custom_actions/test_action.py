@@ -9,7 +9,7 @@ p = Path(__file__).parents[2]
 sys.path.insert(0,str(p))
 pprint.pprint(sys.path)
 from actions.actions import ActionGreet, ActionItemsModified, ActionShowLocation
-from actions.action_order import ActionAddNotes, ActionCancelOrder, ActionPlaceOrder, ValidateRestaurantForm
+from actions.action_order import  ActionCancelOrder, ActionPlaceOrder, ValidateRestaurantForm
 
 
 @pytest.mark.asyncio
